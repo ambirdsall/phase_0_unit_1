@@ -1,7 +1,12 @@
 # U1.W2: Chrome Dev Tools Challenge Reflection
 
 * Describe the Document Object Model? What about it makes sense to you? What doesn't? What seems good and bad about it?
+	The DOM is a representation of a web page's source file as a structured series of objects that can interface with programming languages. The nested structure is totally analogous to HTML, and the ability to automate conditional changes is fundamental to making a website that is interactive in any way. I realize that I've been a little bored with HTML, and it's because none of the pages I've made DOES anything. They're all static. Changing that requires the DOM or something like it, so that's great. Having not dug into the syntax of manipulating a document, I can't tell to what degree it's sensible or intuitive, but that will have to remain to be seen. Hopefully not for too much longer.
 * How did using Chrome Web Tools to look at your site and a wordpress.com site compare?
+	My site is VERY rudimentary at the moment, but even if it were spitshined up, it's structured fundamentally differently from the wordpress site I looked at. The content of my site was all within the body tag. The wordpress site, in contrast, had a very spare body: just a few anchors for all the javascript up in the head tag to work on. It makes sense: the content from the wordpress site came from an interactive "create new post" page, which has to use a script (clearly javascript here) to shoehorn in the author's choices via the DOM.
 * Did you find Chrome Web Tools fun, helpful, or a pain to work with?
+	It's helpful, for sure, and relatively intuitive. There were definitely times when I found myself double-clicking something in vain or other minor miscues, but even when my first thought wasn't quite right, I never had any issues making the changes I tried.
 * Did you have an "aha" moments or were any concepts solidified?
+	I had a big "aha" moment when I dug into the DOM reading at first. Pretty immediately, it seemed obvious in retrospect that that's how an object-oriented language can work in the context of a webpage, but I had never conceptualized it independently.
 * Did you find any resources on your own that helped you better understand a topic? If so, please list it.
+	It didn't help me understand, exactly, but I installed the Webpage Screenshot plugin for Chrome for the quiz.
