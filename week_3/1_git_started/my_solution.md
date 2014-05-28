@@ -66,3 +66,8 @@ Define the following commands and describe how they work/what they do.
 3. Cause (explain the error)
 	I didn't realize, having just used the app, that I needed to explicitly stage files with "add". Once I did so, it worked fine.
 ## Release 6: Reflection
+	This was a pretty straightfoward challenge, but one I was a little nervous about. I had done all my version control with the GitHub app, which is a tidy GUI that takes care of some details for you—I just wasn't sure how many gaps I had to fill in here. But it was not all that hairy a beast.
+
+	Looking up all the commands was simple as can be: I just typed "git help" into Terminal and there they all were. I did look up the difference between "fetch" and "pull" online, though. They're similar, but I couldn't tell the difference between them at all at first (now I do! See above). I did spend a little extra time working through the first 8 challenges of the LearnGitBranching app linked in the readme beforehand, just to get some concrete practice using the command line with git. I think it helped, more in terms of building comfort and confidence than in terms of producing any "Aha" moments. I think I spent more time swearing at it than thanking it, and I found the lack of a reset button infuriating when I made a misstep; still, I'm glad I took the time to do it.
+
+	I don't find interfacing with git via the Terminal to be confusing, but it's a lot less intuitive than the app. I'm really curious to see how my opinion will shift as I use git in more and more complex ways: are we using CLI because it's better at certain git functionalities, or just because all the cool developers are doing it? Right now, the jury's still out.
