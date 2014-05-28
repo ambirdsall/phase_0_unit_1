@@ -3,7 +3,7 @@ Define the following commands and describe how they work/what they do.
 
 
 #### add
-	brings a file to the 'attention' of git; future changes to the file will be tracked
+	brings a file to the 'attention' of git; future changes to the file will be tracked. Used to add new files and stage existing ones
 
 #### branch
 	creates a new 'thread' to track changes in the repo, allowing parallel development. Also lets you manipulate preexisting branches.
@@ -56,7 +56,13 @@ Define the following commands and describe how they work/what they do.
 
 ## Release 5: Errors you encountered
 1. Error
-2. Solution
-3. Cause (explain the error)
+	"Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
+	modified:   week_3/1_git_started/my_solution.md"
+2. Solution
+	"git add week_3/1_git_started/my_solution.md"
+3. Cause (explain the error)
+	I didn't realize, having just used the app, that I needed to explicitly stage files with "add". Once I did so, it worked fine.
 ## Release 6: Reflection
