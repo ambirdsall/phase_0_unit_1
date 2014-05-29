@@ -17,21 +17,52 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+var adam = {
+  name: "Adam",
+  spouse: terah
+}
 
-
-
-
+terah.spouse = adam;
+terah.weight = 125;
+// get rid of terah's eyeColor
+delete terah.eyeColor;
+terah.children = {
+  carson: {name: "Carson"},
+  carter: {name: "Carter"},
+  colton: {name: "Colton"}
+}
+adam.children = terah.children;
 
 
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
 // 
+// For the most part, this went like the other solo challenge this week: quickly and easily. I thought the added complexity
+// made it much more interesting, or anyway more fun. It wasn't so obvious what went where. I used a little pseudocode,
+// unlike last time, when I wan't sure how to remove a key. I left it in above its code translation as a comment, though
+// it feels out of place, given the simple, comment-free format of the rest of my code. The information about "delete" came
+// from http://perfectionkills.com/understanding-delete/ via Stack Overflow via Google.
+//
+// I have mixed feelings about my lack of psuedocode here. On one hand, I know I should be practicing using pseudocode even
+// when it's tedious, because it's an important habit for clarity, especially with complex projects. On the other hand, I
+// genuinely enjoy reading code qua code, especially when, as here, it's simple enough to speak for itself. I think I left
+// that one line of pseudocode in as an offering, really. On its own, it's just a jumped-up, obsolete placeholder.
+//
+// The one hiccup I had was that I first tried assigning adam.children to be terah.children in the adam object literal: that 
+// is, by entering "children: terah.children" within adam's curly braces. I wasn't sure if it would work, so I tried. Sure
+// enough, that first run's test listing ended with "11. false".
+
+// I did find interesting was how that failed test short-circuited the code. I haven't used "throw" before, though
+// it obviously has some stuff in common with a "break" statement (logging a thumbs up and returning true after evaluating the 
+// test as false would be absurd), but when I tried running the code without adam.child support (har), it never bothered logging
+// the final terah object. Just spat out:
+// //   throw "ERROR: " + message;
+// //                    ^
+// //ERROR: The value of the adam children property should be the value of the terah children property"
 // 
-// 
-// 
-// 
-// 
+// and that was that.
+
 
 
 // __________________________________________
