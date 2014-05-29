@@ -1,23 +1,24 @@
-// I paired [by myself, with:] on this challenge.
+// I paired by myself on this challenge.
 
 // __________________________________________
 // Write your code below.
 
-
-
-
+var secretNumber = 7;
+var password = 'just open the door';
+var allowedIn = false;
+var members = ["John", "Peter", "Paul", "Mary"];
 
 
 
 
 // __________________________________________
 // Reflection: Use the reflection guidelines to write a reflection here. 
-// 
-// 
-// 
-// 
-// 
-// 
+// If you're comfortable with numbers, strings, booleans, and arrays as data types and with prefacing js
+// variables with "var" and ending lines with ";", then this challenge wasn't really anything of the sort.
+// I didn't need any pseudocode, because the code was very, very readable. It did take a moment of reflection
+// to get my head around the mechanics of assert(), but having done so, the tests were a numbered walk through
+// the variable declarations. You were given the names, the types, and the values of each, and in the form of
+// strings. Strings located in the parameter called "message". Doesn't get much more straightforward than that.
 
 
 // __________________________________________
