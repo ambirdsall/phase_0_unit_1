@@ -26,11 +26,10 @@ terah.spouse = adam;
 terah.weight = 125;
 // get rid of terah's eyeColor
 delete terah.eyeColor;
-terah.children = {
-  carson: {name: "Carson"},
-  carter: {name: "Carter"},
-  colton: {name: "Colton"}
-}
+terah.children = {};
+terah.children.carson = {name: "Carson"};
+terah.children.carter = {name: "Carter"};
+terah.children.colton = {name: "Colton"};
 adam.children = terah.children;
 
 
