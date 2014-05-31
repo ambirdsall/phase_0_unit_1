@@ -22,12 +22,24 @@
 var burglar = {
 	location: [0,0],
 	orientation: "east",
-	jewelsPosession: false
+	jewelsPosession: false,
+	onPath: true
 }
 
 var path = [[0,0], [5,0], [10,0], [10,5], [10,10], [15,10]];
 
 var jewelsCase = [15,10];
+
+var alarm = "WOOP WOOP HELLA ALARMS WOOP"
+
+var pathOrNot = function() {
+	burglar.onPath = false;
+	for (i=0; i < path.length; i++) {
+		if (burglar.location[0] === path[i][0] && burglar.location[1] === path[i][1]) {
+			burglar.onPath = true;
+		}
+	}
+}
 
 var sneak = function() {
 	if (burglar.orientation ===	"north") {
@@ -39,6 +51,12 @@ var sneak = function() {
 	} else if (burglar.location ===	"west") {
 		burglar.location[0] -= 5;
 	}
+
+	pathOrNot();
+
+	if (burglar.onPath != true) {
+	 	console.log(alarm);
+	 }
 }
 
 var turnLeft = function() {
@@ -70,7 +88,7 @@ var pilfer = function() {
 		burglar.jewelsPosession = true;
 		console.log("You carefully lift the jewels from their case. They feel... expensive.");
 	} else {
-		console.log("WOOP WOOP HELLA ALARMS WOOP");
+		console.log(alarm);
 	}
 }
 
@@ -82,6 +100,14 @@ sneak();
 turnRight();
 sneak();
 pilfer();
+// turnRight();
+// turnRight();
+// sneak();
+// turnLeft();
+// sneak();
+// sneak();
+// turnRight()
+
 
 // Refactored Code
 
