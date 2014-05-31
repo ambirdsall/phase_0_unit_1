@@ -46,9 +46,9 @@ var sneak = function() {
 	 	burglar.location[1] += 5;
 	} else if (burglar.orientation === "east") {
 		burglar.location[0] += 5;
-	} else if (burglar.location ===	"south") {
+	} else if (burglar.orientation ===	"south") {
 		burglar.location[1] -= 5;
-	} else if (burglar.location ===	"west") {
+	} else if (burglar.orientation ===	"west") {
 		burglar.location[0] -= 5;
 	}
 
@@ -102,21 +102,25 @@ var climb = function() {
 	}
 }
 
-sneak();
-sneak();
-turnLeft();
-sneak();
-sneak();
-turnRight();
-sneak();
-pilfer();
+// successful run:
+// sneak();
+// sneak();
+// turnLeft();
+// sneak();
+// sneak();
+// turnRight();
+// sneak();
+// pilfer();
 // turnRight();
 // turnRight();
 // sneak();
 // turnLeft();
 // sneak();
 // sneak();
-// turnRight()
+// turnRight();
+// sneak();
+// sneak();
+// climb();
 
 
 // Refactored Code
