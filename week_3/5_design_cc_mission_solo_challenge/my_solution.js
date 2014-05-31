@@ -66,7 +66,7 @@ var turnRight = function() {
 }
 
 var pilfer = function() {
-	if (location === jewelsCase) {
+	if (burglar.location[0] === jewelsCase[0] && burglar.location[1] === jewelsCase[1]) {
 		burglar.jewelsPosession = true;
 		console.log("You carefully lift the jewels from their case. They feel... expensive.");
 	} else {
@@ -74,6 +74,14 @@ var pilfer = function() {
 	}
 }
 
+sneak();
+sneak();
+turnLeft();
+sneak();
+sneak();
+turnRight();
+sneak();
+pilfer();
 
 // Refactored Code
 
