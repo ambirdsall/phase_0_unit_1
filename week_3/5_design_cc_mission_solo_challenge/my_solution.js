@@ -30,44 +30,38 @@ var path = [[0,0], [5,0], [10,0], [10,5], [10,10], [15,10]];
 var jewelsCase = [15,10];
 
 var sneak = function() {
-	case burglar.orientation {
-		"north": burglar.location[1] += 5;
-			break;
-		"east": burglar.location[0] += 5;
-			break;
-		"south": burglar.location[1] -= 5;
-			break;
-		"west": burglar.location[0] -= 5;
-			break;
-		default: console.log("sneak error");
+	if (burglar.orientation ===	"north") {
+	 	burglar.location[1] += 5;
+	} else if (burglar.orientation === "east") {
+		burglar.location[0] += 5;
+	} else if (burglar.location ===	"south") {
+		burglar.location[1] -= 5;
+	} else if (burglar.location ===	"west") {
+		burglar.location[0] -= 5;
 	}
 }
 
 var turnLeft = function() {
-	case: burglar.orientation {
-		"north": burglar.orientation = "west";
-			break;
-		"east": burglar.orientation = "north";
-			break;
-		"south": burglar.orientation = "east";
-			break;
-		"west": burglar.orientation = "south";
-			break;
-		default: console.log("turnLeft error");
+	if (burglar.orientation === "north") {
+		burglar.orientation = "west";
+	} else if (burglar.orientation === "east") {
+		burglar.orientation = "north";
+	} else if (burglar.orientation === "south") {
+		burglar.orientation = "east";
+	} else if (burglar.orientation === "west") {
+		burglar.orientation = "south";
 	}
 }
 
 var turnRight = function() {
-	case: burglar.orientation {
-		"south": burglar.orientation = "west";
-			break;
-		"west": burglar.orientation = "north";
-			break;
-		"north": burglar.orientation = "east";
-			break;
-		"east": burglar.orientation = "south";
-			break;
-		default: console.log("turnRight error");
+	if (burglar.orientation === "south") {
+		burglar.orientation = "west";
+	} else if (burglar.orientation === "west") {
+		burglar.orientation = "north";
+	} else if (burglar.orientation === "north") {
+		burglar.orientation = "east";
+	} else if (burglar.orientation === "east") {
+		burglar.orientation = "south";
 	}
 }
 
