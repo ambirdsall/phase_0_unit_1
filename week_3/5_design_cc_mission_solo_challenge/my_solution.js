@@ -15,7 +15,7 @@
 // if location is != path member, message "WOOP WOOP HELLA ALARMS WOOP"
 // if snatch jewels and not at (15,10), message "WOOP WOOP HELLA ALARMS WOOP"
 // if climb and not at (0,0), message "WOOP WOOP HELLA ALARMS WOOP"
-// if climb and !jewelsPosession, message "Really? You're risking all that prison time and you don't even get the jewels? You're not a very good cat burglar."
+// if climb and !jewelsPosession, message "Really? You're risking all that prison time and you don't even get the jewels? Someone's a scaredy cat burglar."
 // if climb and jewelsPosession, message "Aw yeah, who's the baddest cat around? IT'S THIS ONE RIGHT HERE WITH ALL THE JEWELS"
 
 // Initial Code
@@ -87,6 +87,16 @@ var pilfer = function() {
 	if (burglar.location[0] === jewelsCase[0] && burglar.location[1] === jewelsCase[1]) {
 		burglar.jewelsPosession = true;
 		console.log("You carefully lift the jewels from their case. They feel... expensive.");
+	} else {
+		console.log(alarm);
+	}
+}
+
+var climb = function() {
+	if (burglar.location[0] === 0 && burglar.location[1] === 0 && burglar.jewelsPosession) {
+		console.log("Aw yeah, who's the baddest cat around? IT'S THIS ONE RIGHT HERE WITH ALL THE JEWELS");
+	} else if (burglar.location[0] === 0 && burglar.location[1] === 0 && !burglar.jewelsPosession) {
+		console.log("Really? You're risking all that prison time and you don't even get the jewels? Someone's a scaredy cat burglar.");
 	} else {
 		console.log(alarm);
 	}
