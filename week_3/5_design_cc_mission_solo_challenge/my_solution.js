@@ -102,25 +102,27 @@ var climb = function() {
 	}
 }
 
-// successful run:
-// sneak();
-// sneak();
-// turnLeft();
-// sneak();
-// sneak();
-// turnRight();
-// sneak();
-// pilfer();
-// turnRight();
-// turnRight();
-// sneak();
-// turnLeft();
-// sneak();
-// sneak();
-// turnRight();
-// sneak();
-// sneak();
-// climb();
+//test run:
+climb();
+sneak();
+ sneak();
+turnLeft();
+sneak();
+sneak();
+turnRight();
+sneak();
+pilfer();
+climb();
+turnRight();
+turnRight();
+sneak();
+turnLeft();
+sneak();
+sneak();
+turnRight();
+sneak();
+sneak();
+climb();
 
 
 // Refactored Code
