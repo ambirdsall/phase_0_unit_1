@@ -1,7 +1,9 @@
-// My role in the group is:
+// My role in the group is: Person 1
 
 // Here is my part of the challenge:
-
+// I want this program to be able to take a bunch of numbers and give me various answers about them: I want it to be able to add 
+// up all the numbers and give me the sum; I want to be able to get the average of all the numbers; and I want to be able to get 
+// the median of all the numbers. It needs to be able to do all that stuff for whatever set of numbers I throw at it.
 
 
 // Reflection:
